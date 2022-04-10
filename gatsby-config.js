@@ -1,7 +1,14 @@
 module.exports = {
   siteMetadata: {
     title: `First Gatsby`,
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: `https://gatsby.goryheadstump.com`,
   },
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-plugin-s3`,
+      options: {
+        bucketName: "first-gatsby-use",
+      },
+    },
+  ]
 }
